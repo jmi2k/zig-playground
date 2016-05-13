@@ -1,4 +1,4 @@
-pub fn main(args: [][]u8) {
+pub fn main(args: [][]u8) -> %void {
     // By design, Zig does not allow null on any type...
     var x_sure : i32 = 32;
 
