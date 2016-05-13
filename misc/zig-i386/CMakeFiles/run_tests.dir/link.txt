@@ -1,0 +1,1 @@
+/usr/bin/c++   -g -Werror -Wall   -static  CMakeFiles/run_tests.dir/src/buffer.cpp.o CMakeFiles/run_tests.dir/src/util.cpp.o CMakeFiles/run_tests.dir/src/os.cpp.o CMakeFiles/run_tests.dir/src/error.cpp.o CMakeFiles/run_tests.dir/test/run_tests.cpp.o  -o run_tests  -L/usr/lib/llvm-3.8/lib -rdynamic 

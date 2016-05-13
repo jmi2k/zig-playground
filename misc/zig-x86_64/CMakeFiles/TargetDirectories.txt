@@ -1,0 +1,8 @@
+/tmp/zig/build/CMakeFiles/install.dir
+/tmp/zig/build/CMakeFiles/list_install_components.dir
+/tmp/zig/build/CMakeFiles/rebuild_cache.dir
+/tmp/zig/build/CMakeFiles/edit_cache.dir
+/tmp/zig/build/CMakeFiles/zig.dir
+/tmp/zig/build/CMakeFiles/run_tests.dir
+/tmp/zig/build/CMakeFiles/install/strip.dir
+/tmp/zig/build/CMakeFiles/install/local.dir
