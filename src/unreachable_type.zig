@@ -23,7 +23,6 @@ pub fn main(args: [][]u8) -> %void {
     never_return();
 
     /* More useful examples:
-        src/types.zig
         src/maybe_type.zig
         src/error_type.zig */
 }
