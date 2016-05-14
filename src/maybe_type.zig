@@ -8,10 +8,21 @@ pub fn main(args: [][]u8) -> %void {
 
     /* Zig provides syntactic mechanisms to ensure code safety: You cannot
        assign directly a maybe type to a normal type, you have to unwrap it */
-    var z_sure : i32 = x_i_guess ?? return;   // This would succeed
     var y_sure : i32 = maybe_x ?? return;     // This would fail and exit
+    var z_sure : i32 = x_i_guess ?? return;   // This would succeed
+
+    /* You can also provide a default value when you find a null */
+    var result : i32 = maybe_x ?? -1;   // result will be -1
 
     /* If you are really sure that the maybe value isn't null, you can use the
        unreachable type: */
-    var i_sure : i32 = x_i_guess ?? unreachable{};
+    var x_sure : i32 = ??x_i_guess;
+
+    /* You can also unwrap maybe types with the ?= operator inside an if block.
+       It lets you do things such as: */
+    // TODO
+
+    /* More useful examples:
+        src/types.zig
+        src/unreachable_type.zig */
 }
