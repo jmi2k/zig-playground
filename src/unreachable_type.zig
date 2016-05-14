@@ -18,8 +18,6 @@ pub fn main(args: [][]u8) -> %void {
     var y_sure : i32 = %%no_error;   // Short operator, unwraps an error type
 
     // Finally, unreachable as a return type. Guess what it does!
-    /* TODO: Zig is smarter than I'd like. Because of the infinite loop, this
-       won't compile */
     never_return();
 
     /* More useful examples:
@@ -27,6 +25,7 @@ pub fn main(args: [][]u8) -> %void {
         src/error_type.zig */
 }
 
+#static_eval_enable(false)   // Just to keep Zig happy about infinite loops
 fn never_return() -> unreachable {
     /* This function should never ever return, hence the return type. It will
        hang the program, so press ctrl-c */
