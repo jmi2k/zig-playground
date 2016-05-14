@@ -26,8 +26,7 @@ to dig into and reuse while experimenting.
 ```
 
 * `bin/` holds static, self-contained versions of Zig. Useful if you don't want
-to compile Zig yourself (althrought they can be slighty outdated). Binaries
-produced by the project also go there.
+to compile Zig yourself (althrought they can be slighty outdated).
 
 * `misc/` contains files that are needed for Zig or any of the building scripts
 to work correctly.
