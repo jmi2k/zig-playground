@@ -28,6 +28,5 @@ pub fn main(args: [][]u8) -> %void {
     }
 
     /* More useful examples:
-        src/types.zig
         src/unreachable_type.zig */
 }
