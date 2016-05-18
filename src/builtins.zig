@@ -24,7 +24,7 @@ pub fn main(args: [][]u8) -> %void {
     %%std.io.stdout.printf(readme);
 
     // @typeof will give you the type of an identifier:
-    std.assert(@typeof(readme) == []u8);   // Runtime error if it isn't true
+    std.assert(@typeof(readme) == []u8);   // Compile error if it isn't true
 
     // @sizeof will give you the size of a type in bytes:
     %%std.io.stdout.print_u64(@sizeof(u64));
