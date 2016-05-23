@@ -12,11 +12,6 @@ to dig into and reuse while experimenting.
 │   │   └── zig -> ../../misc/zig-i386/bin/zig*
 │   └── x86_64/
 │       └── zig -> ../../misc/zig-x86_64/bin/zig*
-├── misc/
-│   ├── zig-i386/
-│   │   └── ...
-│   └── zig-x86_64/
-│       └── ...
 ├── src/
 │   ├── playground.zig -> hello_world.zig
 │   └── ...
@@ -26,10 +21,9 @@ to dig into and reuse while experimenting.
 ```
 
 * `bin/` holds static, self-contained versions of Zig. Useful if you don't want
-to compile Zig yourself (althrought they can be slighty outdated).
-
-* `misc/` contains files that are needed for Zig or any of the building scripts
-to work correctly.
+to compile Zig yourself (althrought they can be slighty outdated). They link to
+`misc/...`, so be sure to run `make prepare` before to dowload the files needed
+for your platform
 
 * `src/`: here is the fun! Loads of code examples that guide you through your
 first steps with Zig, as well as demonstrations of its features.
@@ -47,7 +41,8 @@ and compile your own binaries if you can.
 ## How do I start?
 
 ```
-$ make          # Builds the project
+$ make prepare  # Download needed files to misc/
+$ make          # Build the project
 $ make run      # Run it!
 $ make clean    # Optional: clean .o files
 Hello World!
