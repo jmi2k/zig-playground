@@ -11,3 +11,15 @@ clean:
 
 run:
 	@./playground
+
+prepare:
+	@rm -rf misc
+	@mkdir misc
+	@curl -sL $( \
+		curl -sL https://api.github.com/repos/jmi2k/zig-playground/releases/latest \
+		| grep "\"browser_download_url\"" \
+		| grep "${ARCH}" \
+		| grep https://\[^\"\]\* -o) \
+		> misc/release.tar.gz
+	@tar -xf misc/release.tar.gz -C misc
+	@rm misc/release.tar.gz
