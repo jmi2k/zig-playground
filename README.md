@@ -20,10 +20,10 @@ to dig into and reuse while experimenting.
 └── README.md
 ```
 
-* `bin/` holds static, self-contained versions of Zig. Useful if you don't want
+* `bin/` holds self-contained versions of Zig. Useful if you don't want
 to compile Zig yourself (althrought they can be slighty outdated). They link to
 `misc/...`, so be sure to run `make prepare` before to dowload the files needed
-for your platform
+for your platform.
 
 * `src/`: here is the fun! Loads of code examples that guide you through your
 first steps with Zig, as well as demonstrations of its features.
@@ -37,6 +37,12 @@ So everything, from the examples, to the documentation, and the precompiled
 binaries, can become outdated the same day you download the project. I
 recommend you to keep track of [andrewrk/zig](https://github.com/andrewrk/zig),
 and compile your own binaries if you can.
+
+## Dependencies
+
+I was planning to distributing static binaries, but for now I just can't
+provide them. So, to get Zig to work, you need to fullfill the dependencies
+listed in its repository.
 
 ## How do I start?
 
