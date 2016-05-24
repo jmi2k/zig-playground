@@ -40,7 +40,7 @@ and compile your own binaries if you can.
 
 ## Dependencies
 
-I was planning to distributing static binaries, but for now I just can't
+I was planning to distribute static binaries, but for now I just can't
 provide them. So, to get Zig to work, you need to fullfill the dependencies
 listed in its repository.
 
